@@ -51,8 +51,6 @@ public class MainActivity extends Activity {
 	// Attributes
 	//--------------------------------------------------
 
-	private Handler mHandler;
-
 	private GridView mGridView;
 	private GalleryAdapter mGalleryAdapter;
 	private ImageView mSinglePickImageView;
@@ -75,38 +73,25 @@ public class MainActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 
-		initImageLoader();
-		init();
+		setImageLoader();
+		setLayout();
+		setButtonListeners();
 	}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
-		if (requestCode == SINGLE_PICTURE_OPTION && resultCode == RESULT_OK) {
-			mGalleryAdapter.clear();
-			mViewSwitcher.setDisplayedChild(1);
-			String singlePath = data.getStringExtra("single_path");
-			mImageLoader.displayImage("file://" + singlePath, mSinglePickImageView);
-		} else if (requestCode == MULTIPLE_PICTURE_OPTION && resultCode == RESULT_OK) {
-			String[] all_path = data.getStringArrayExtra("all_path");
-			ArrayList<CustomGallery> dataT = new ArrayList<>();
-			for (String string : all_path) {
-				CustomGallery item = new CustomGallery();
-				item.sdcardPath = string;
-				dataT.add(item);
-			}
-			mViewSwitcher.setDisplayedChild(0);
-			mGalleryAdapter.addAll(dataT);
-		} else if (requestCode == REQUEST_CAMERA_OPTION && resultCode == RESULT_OK) {
-//			onCaptureImageResult(data);
-			// Bitmap bitmap = (Bitmap)data.getExtras().get("data");
-			// mSinglePickImageView.setImageBitmap(bitmap);
-			try {
-				Bitmap thumbnail = MediaStore.Images.Media.getBitmap(getContentResolver(), mImageUri);
-				mSinglePickImageView.setImageBitmap(thumbnail);
-				String imageUrl = getRealPathFromUri(mImageUri);
-			} catch (Exception e) {
-				e.printStackTrace();
+		if (resultCode == RESULT_OK) {
+			switch (requestCode) {
+				case SINGLE_PICTURE_OPTION:
+					getSinglePicture(data);
+					break;
+				case MULTIPLE_PICTURE_OPTION:
+					getMutiplePictures(data);
+					break;
+				case REQUEST_CAMERA_OPTION:
+					takePicture();
+					break;
 			}
 		}
 	}
@@ -115,21 +100,19 @@ public class MainActivity extends Activity {
 	// Methods
 	//--------------------------------------------------
 
-	private void initImageLoader() {
+	private void setImageLoader() {
 		DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
 			.cacheOnDisc().imageScaleType(ImageScaleType.EXACTLY_STRETCHED)
 			.bitmapConfig(Bitmap.Config.RGB_565).build();
 		ImageLoaderConfiguration.Builder builder = new ImageLoaderConfiguration.Builder(this)
-			.defaultDisplayImageOptions(defaultOptions).memoryCache(
-			new WeakMemoryCache());
+			.defaultDisplayImageOptions(defaultOptions).memoryCache(new WeakMemoryCache());
 
 		ImageLoaderConfiguration config = builder.build();
 		mImageLoader = ImageLoader.getInstance();
 		mImageLoader.init(config);
 	}
 
-	private void init() {
-		mHandler = new Handler();
+	private void setLayout() {
 		mGridView = (GridView)findViewById(R.id.id_activity_main__grid_view);
 		mGridView.setFastScrollEnabled(true);
 
@@ -143,6 +126,11 @@ public class MainActivity extends Activity {
 		mSinglePickImageView = (ImageView)findViewById(R.id.id_activity_main__single_pick_image_view);
 
 		mGalleryPickButton = (Button)findViewById(R.id.id_activity_main__pick_button);
+		mGalleryPickMultipleButton = (Button)findViewById(R.id.id_activity_main__multiple_pick_button);
+		mTakePictureButton = (Button)findViewById(R.id.id_activity_main__take_picture_button);
+	}
+
+	private void setButtonListeners() {
 		mGalleryPickButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -151,7 +139,6 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		mGalleryPickMultipleButton = (Button)findViewById(R.id.id_activity_main__multiple_pick_button);
 		mGalleryPickMultipleButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
@@ -160,12 +147,9 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		mTakePictureButton = (Button)findViewById(R.id.id_activity_main__take_picture_button);
 		mTakePictureButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-//				Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//				startActivityForResult(intent, REQUEST_CAMERA_OPTION);
 				ContentValues values = new ContentValues();
 				values.put(MediaStore.Images.Media.TITLE, "New Picture");
 				values.put(MediaStore.Images.Media.DESCRIPTION, "From your Camera");
@@ -177,24 +161,33 @@ public class MainActivity extends Activity {
 		});
 	}
 
-	private void onCaptureImageResult(Intent data) {
-		Bitmap thumbnail = (Bitmap)data.getExtras().get("data");
-		ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-		thumbnail.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
+	private void getSinglePicture(Intent data) {
+		mGalleryAdapter.clear();
+		mViewSwitcher.setDisplayedChild(1);
+		String singlePath = data.getStringExtra("single_path");
+		mImageLoader.displayImage("file://" + singlePath, mSinglePickImageView);
+	}
 
-		File destination = new File(Environment.getExternalStorageDirectory(), System.currentTimeMillis() + ".jpg");
-		FileOutputStream fileOutputStream;
+	private void getMutiplePictures(Intent data) {
+		String[] all_path = data.getStringArrayExtra("all_path");
+		ArrayList<CustomGallery> dataT = new ArrayList<>();
+		for (String string : all_path) {
+			CustomGallery item = new CustomGallery();
+			item.sdcardPath = string;
+			dataT.add(item);
+		}
+		mViewSwitcher.setDisplayedChild(0);
+		mGalleryAdapter.addAll(dataT);
+	}
+
+	private void takePicture() {
 		try {
-			destination.createNewFile();
-			fileOutputStream = new FileOutputStream(destination);
-			fileOutputStream.write(bytes.toByteArray());
-			fileOutputStream.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
+			Bitmap thumbnail = MediaStore.Images.Media.getBitmap(getContentResolver(), mImageUri);
+			mSinglePickImageView.setImageBitmap(thumbnail);
+			String imageUrl = getRealPathFromUri(mImageUri);
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		mSinglePickImageView.setImageBitmap(thumbnail);
 	}
 
 	@SuppressWarnings("deprecation")
