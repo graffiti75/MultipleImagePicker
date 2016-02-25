@@ -63,15 +63,15 @@ public class CustomGalleryActivity extends Activity {
 		if (mAction == null) {
 			finish();
 		}
-		initImageLoader();
-		init();
+		setImageLoader();
+		setLayout();
 	}
 
 	//--------------------------------------------------
 	// Methods
 	//--------------------------------------------------
 
-	private void initImageLoader() {
+	private void setImageLoader() {
 		try {
 			String CACHE_DIR = Environment.getExternalStorageDirectory().getAbsolutePath() + "/.temp_tmp";
 			new File(CACHE_DIR).mkdirs();
@@ -91,10 +91,12 @@ public class CustomGalleryActivity extends Activity {
 		} catch (Exception e) {}
 	}
 
-	private void init() {
+	private void setLayout() {
 		mHandler = new Handler();
+
 		mGridView = (GridView) findViewById(R.id.id_activity_custom_gallery__grid_view);
 		mGridView.setFastScrollEnabled(true);
+
 		mGalleryAdapter = new GalleryAdapter(getApplicationContext(), mImageLoader);
 		PauseOnScrollListener listener = new PauseOnScrollListener(mImageLoader, true, true);
 		mGridView.setOnScrollListener(listener);
@@ -166,7 +168,7 @@ public class CustomGalleryActivity extends Activity {
 	// Listeners
 	//--------------------------------------------------
 
-	View.OnClickListener mOkClickListener = new View.OnClickListener() {
+	private View.OnClickListener mOkClickListener = new View.OnClickListener() {
 		@Override
 		public void onClick(View view) {
 			ArrayList<CustomGallery> selected = mGalleryAdapter.getSelected();
@@ -180,14 +182,15 @@ public class CustomGalleryActivity extends Activity {
 			finish();
 		}
 	};
-	AdapterView.OnItemClickListener mItemMulClickListener = new AdapterView.OnItemClickListener() {
+
+	private AdapterView.OnItemClickListener mItemMulClickListener = new AdapterView.OnItemClickListener() {
 		@Override
 		public void onItemClick(AdapterView<?> l, View v, int position, long id) {
 			mGalleryAdapter.changeSelection(v, position);
 		}
 	};
 
-	AdapterView.OnItemClickListener mItemSingleClickListener = new AdapterView.OnItemClickListener() {
+	private AdapterView.OnItemClickListener mItemSingleClickListener = new AdapterView.OnItemClickListener() {
 		@Override
 		public void onItemClick(AdapterView<?> l, View v, int position, long id) {
 			CustomGallery item = mGalleryAdapter.getItem(position);
