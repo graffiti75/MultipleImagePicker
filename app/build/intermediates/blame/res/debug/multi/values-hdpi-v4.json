@@ -1,0 +1,58 @@
+[
+    {
+        "outputFile": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/values-hdpi-v4/values-hdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/values-hdpi/dimens.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 663,
+                        "endColumn": 44,
+                        "endOffset": 703
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 43,
+                    "endOffset": 139
+                },
+                "from": {
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/values-hdpi/dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 619,
+                        "endColumn": 43,
+                        "endOffset": 658
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 144,
+                    "endLine": 8,
+                    "endColumn": 13,
+                    "endOffset": 416
+                },
+                "from": {
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-hdpi/values-hdpi.xml"
+                }
+            }
+        ]
+    }
+]
