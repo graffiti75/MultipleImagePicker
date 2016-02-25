@@ -14,10 +14,11 @@
     <dimen name="photo_height">100dp</dimen>
     <dimen name="photo_width">100dp</dimen>
     <drawable name="light_black_">#33000000</drawable>
-    <string name="app_name">Luminous Gallery</string>
+    <string name="app_name">MultipleImagePicker</string>
     <string name="btn_ok">OK</string>
     <string name="btn_pick">Pick From Gallery</string>
     <string name="btn_pick_mul">Pick From Gallery (Multiple)</string>
+    <string name="take_picture">Take Picture</string>
     <style name="AppBaseTheme" parent="android:Theme.Light"/>
     <style name="AppTheme" parent="AppBaseTheme"/>
 </resources>

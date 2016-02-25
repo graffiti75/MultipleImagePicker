@@ -63,5 +63,15 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/btn_sel"
             android:text="@string/btn_pick_mul" />
+
+        <Button
+            android:id="@+id/id_activity_main__take_picture_button"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_sel"
+            android:text="@string/take_picture" />
     </LinearLayout>
 </LinearLayout>

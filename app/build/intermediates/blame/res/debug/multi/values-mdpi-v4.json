@@ -175,8 +175,8 @@
                     "startLine": 16,
                     "startColumn": 4,
                     "startOffset": 710,
-                    "endColumn": 53,
-                    "endOffset": 759
+                    "endColumn": 56,
+                    "endOffset": 762
                 },
                 "from": {
                     "file": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/values-mdpi/strings.xml"
@@ -186,9 +186,9 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 764,
+                    "startOffset": 767,
                     "endColumn": 37,
-                    "endOffset": 797
+                    "endOffset": 800
                 },
                 "from": {
                     "file": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/values-mdpi/strings.xml"
@@ -198,9 +198,9 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 802,
+                    "startOffset": 805,
                     "endColumn": 54,
-                    "endOffset": 852
+                    "endOffset": 855
                 },
                 "from": {
                     "file": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/values-mdpi/strings.xml"
@@ -210,9 +210,9 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 857,
+                    "startOffset": 860,
                     "endColumn": 69,
-                    "endOffset": 922
+                    "endOffset": 925
                 },
                 "from": {
                     "file": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/values-mdpi/strings.xml"
@@ -222,9 +222,28 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 927,
+                    "startOffset": 930,
+                    "endColumn": 53,
+                    "endOffset": 979
+                },
+                "from": {
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/values-mdpi/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 275,
+                        "endColumn": 53,
+                        "endOffset": 324
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 984,
                     "endColumn": 61,
-                    "endOffset": 984
+                    "endOffset": 1041
                 },
                 "from": {
                     "file": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/values-mdpi/styles.xml"
@@ -232,11 +251,11 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 989,
+                    "startOffset": 1046,
                     "endColumn": 50,
-                    "endOffset": 1035
+                    "endOffset": 1092
                 },
                 "from": {
                     "file": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/values-mdpi/styles.xml"
