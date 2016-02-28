@@ -14,7 +14,7 @@
             android:layout_height="wrap_content" >
 
             <ImageView
-                android:id="@+id/id_adapter_gallery__image_view"
+                android:id="@+id/id_adapter_gallery__display_image_view"
                 android:layout_width="@dimen/photo_width"
                 android:layout_height="@dimen/photo_height"
                 android:contentDescription="@string/app_name"
@@ -23,13 +23,13 @@
         </FrameLayout>
 
         <ImageView
-            android:id="@+id/id_adapter_gallery__multi_selected_image_view"
+            android:id="@+id/id_adapter_gallery__select_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
-            android:background="@drawable/on_focus_checkbox"
+            android:background="@drawable/circle_drawable"
             android:contentDescription="@string/app_name"
             android:gravity="center"
             android:scaleType="center"

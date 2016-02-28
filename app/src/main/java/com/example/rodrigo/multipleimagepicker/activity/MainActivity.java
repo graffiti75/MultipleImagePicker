@@ -7,31 +7,25 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
 import android.provider.MediaStore;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewSwitcher;
 
 import com.example.rodrigo.multipleimagepicker.Action;
 import com.example.rodrigo.multipleimagepicker.CustomGallery;
-import com.example.rodrigo.multipleimagepicker.adapter.GalleryAdapter;
 import com.example.rodrigo.multipleimagepicker.R;
+import com.example.rodrigo.multipleimagepicker.adapter.GalleryAdapter;
 import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -116,7 +110,7 @@ public class MainActivity extends Activity {
 		mGridView = (GridView)findViewById(R.id.id_activity_main__grid_view);
 		mGridView.setFastScrollEnabled(true);
 
-		mGalleryAdapter = new GalleryAdapter(getApplicationContext(), mImageLoader);
+		mGalleryAdapter = new GalleryAdapter(this, mImageLoader);
 		mGalleryAdapter.setMultiplePick(false);
 		mGridView.setAdapter(mGalleryAdapter);
 

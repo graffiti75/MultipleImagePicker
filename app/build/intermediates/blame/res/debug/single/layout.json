@@ -16,28 +16,28 @@
         "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
         "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
         "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
         "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_material.xml"
     },
     {
-        "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
+        "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
         "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_view.xml"
     },
     {
-        "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_time.xml"
+        "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
@@ -132,12 +132,12 @@
         "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
         "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/adapter_gallery.xml",
         "source": "/Users/rodrigo/git/MultipleImagePicker/app/src/main/res/layout/adapter_gallery.xml"
+    },
+    {
+        "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",

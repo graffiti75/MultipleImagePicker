@@ -33,7 +33,15 @@
                     "endOffset": 606
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 239,
+                        "endLine": 9,
+                        "endColumn": 12,
+                        "endOffset": 653
+                    }
                 }
             },
             {
@@ -46,7 +54,15 @@
                     "endOffset": 1031
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 658,
+                        "endLine": 15,
+                        "endColumn": 12,
+                        "endOffset": 1078
+                    }
                 }
             },
             {
@@ -59,7 +75,15 @@
                     "endOffset": 1459
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1083,
+                        "endLine": 21,
+                        "endColumn": 12,
+                        "endOffset": 1506
+                    }
                 }
             },
             {
@@ -72,7 +96,15 @@
                     "endOffset": 1885
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1511,
+                        "endLine": 27,
+                        "endColumn": 12,
+                        "endOffset": 1932
+                    }
                 }
             },
             {
@@ -85,7 +117,15 @@
                     "endOffset": 2312
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1937,
+                        "endLine": 33,
+                        "endColumn": 12,
+                        "endOffset": 2359
+                    }
                 }
             },
             {
@@ -98,7 +138,15 @@
                     "endOffset": 2737
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 2364,
+                        "endLine": 39,
+                        "endColumn": 12,
+                        "endOffset": 2784
+                    }
                 }
             },
             {
@@ -110,7 +158,14 @@
                     "endOffset": 2826
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 2968,
+                        "endColumn": 88,
+                        "endOffset": 3052
+                    }
                 }
             },
             {
@@ -122,7 +177,14 @@
                     "endOffset": 2927
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 3057,
+                        "endColumn": 100,
+                        "endOffset": 3153
+                    }
                 }
             },
             {
@@ -135,7 +197,15 @@
                     "endOffset": 3335
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 3158,
+                        "endLine": 48,
+                        "endColumn": 12,
+                        "endOffset": 3561
+                    }
                 }
             },
             {
@@ -148,7 +218,15 @@
                     "endOffset": 3755
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 3566,
+                        "endLine": 53,
+                        "endColumn": 12,
+                        "endOffset": 3981
+                    }
                 }
             },
             {
@@ -161,7 +239,15 @@
                     "endOffset": 3862
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 56,
+                        "startColumn": 4,
+                        "startOffset": 4165,
+                        "endLine": 57,
+                        "endColumn": 12,
+                        "endOffset": 4267
+                    }
                 }
             },
             {
@@ -174,7 +260,15 @@
                     "endOffset": 3991
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 58,
+                        "startColumn": 4,
+                        "startOffset": 4272,
+                        "endLine": 59,
+                        "endColumn": 12,
+                        "endOffset": 4396
+                    }
                 }
             },
             {
@@ -186,7 +280,14 @@
                     "endOffset": 4062
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 62,
+                        "startColumn": 4,
+                        "startOffset": 4580,
+                        "endColumn": 70,
+                        "endOffset": 4646
+                    }
                 }
             },
             {
@@ -198,7 +299,14 @@
                     "endOffset": 4145
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 4651,
+                        "endColumn": 82,
+                        "endOffset": 4729
+                    }
                 }
             },
             {
@@ -211,7 +319,15 @@
                     "endOffset": 7853
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 64,
+                        "startColumn": 4,
+                        "startOffset": 4734,
+                        "endLine": 114,
+                        "endColumn": 12,
+                        "endOffset": 8437
+                    }
                 }
             },
             {
@@ -224,7 +340,15 @@
                     "endOffset": 11701
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 115,
+                        "startColumn": 4,
+                        "startOffset": 8442,
+                        "endLine": 166,
+                        "endColumn": 12,
+                        "endOffset": 12285
+                    }
                 }
             },
             {
@@ -236,7 +360,14 @@
                     "endOffset": 11792
                 },
                 "from": {
-                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml"
+                    "file": "/Users/rodrigo/git/MultipleImagePicker/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v11/values-v11.xml",
+                    "position": {
+                        "startLine": 169,
+                        "startColumn": 4,
+                        "startOffset": 12469,
+                        "endColumn": 90,
+                        "endOffset": 12555
+                    }
                 }
             }
         ]

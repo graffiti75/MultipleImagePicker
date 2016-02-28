@@ -1,9 +1,5 @@
 package com.example.rodrigo.multipleimagepicker.activity;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -19,11 +15,12 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.rodrigo.multipleimagepicker.Action;
 import com.example.rodrigo.multipleimagepicker.CustomGallery;
-import com.example.rodrigo.multipleimagepicker.adapter.GalleryAdapter;
 import com.example.rodrigo.multipleimagepicker.R;
+import com.example.rodrigo.multipleimagepicker.adapter.GalleryAdapter;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache;
 import com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -32,6 +29,10 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.assist.PauseOnScrollListener;
 import com.nostra13.universalimageloader.utils.StorageUtils;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class CustomGalleryActivity extends Activity {
 
@@ -48,6 +49,7 @@ public class CustomGalleryActivity extends Activity {
 
 	private String mAction;
 	private ImageLoader mImageLoader;
+	private Integer mCounter = 0;
 
 	//--------------------------------------------------
 	// Activity Life Cycle
@@ -97,7 +99,7 @@ public class CustomGalleryActivity extends Activity {
 		mGridView = (GridView) findViewById(R.id.id_activity_custom_gallery__grid_view);
 		mGridView.setFastScrollEnabled(true);
 
-		mGalleryAdapter = new GalleryAdapter(getApplicationContext(), mImageLoader);
+		mGalleryAdapter = new GalleryAdapter(this, mImageLoader);
 		PauseOnScrollListener listener = new PauseOnScrollListener(mImageLoader, true, true);
 		mGridView.setOnScrollListener(listener);
 
@@ -115,6 +117,7 @@ public class CustomGalleryActivity extends Activity {
 
 		mGalleryOkButton = (Button)findViewById(R.id.id_activity_custom_gallery__ok_button);
 		mGalleryOkButton.setOnClickListener(mOkClickListener);
+
 		new Thread() {
 			@Override
 			public void run() {
@@ -139,6 +142,7 @@ public class CustomGalleryActivity extends Activity {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	private ArrayList<CustomGallery> getGalleryPhotos() {
 		ArrayList<CustomGallery> galleryList = new ArrayList<>();
 
@@ -185,8 +189,8 @@ public class CustomGalleryActivity extends Activity {
 
 	private AdapterView.OnItemClickListener mItemMulClickListener = new AdapterView.OnItemClickListener() {
 		@Override
-		public void onItemClick(AdapterView<?> l, View v, int position, long id) {
-			mGalleryAdapter.changeSelection(v, position);
+		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+			mGalleryAdapter.changeSelection(view, position, mCounter);
 		}
 	};
 
@@ -199,4 +203,13 @@ public class CustomGalleryActivity extends Activity {
 			finish();
 		}
 	};
+
+	//--------------------------------------------------
+	// Callback
+	//--------------------------------------------------
+
+	public void updateCounter(Integer counter) {
+		Toast.makeText(CustomGalleryActivity.this, "Current counter is " + counter + ".", Toast.LENGTH_SHORT).show();
+		mCounter = counter;
+	}
 }

@@ -1662,8 +1662,8 @@ containing a value of this type.
         public static final int id_activity_main__single_pick_image_view=0x7f0c0056;
         public static final int id_activity_main__take_picture_button=0x7f0c0059;
         public static final int id_activity_main__view_switcher=0x7f0c0054;
-        public static final int id_adapter_gallery__image_view=0x7f0c005a;
-        public static final int id_adapter_gallery__multi_selected_image_view=0x7f0c005b;
+        public static final int id_adapter_gallery__display_image_view=0x7f0c005a;
+        public static final int id_adapter_gallery__select_image_view=0x7f0c005b;
         public static final int ifRoom=0x7f0c001d;
         public static final int image=0x7f0c0026;
         public static final int info=0x7f0c0067;
